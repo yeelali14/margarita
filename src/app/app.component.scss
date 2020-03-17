@@ -1,0 +1,39 @@
+
+.tbl-border {
+    border-radius: .25rem;
+    background-color: #4263eb;
+}
+
+.tbl-title {
+    background-color: #343a40;
+    border-radius: .25rem .25rem 0rem 0rem;
+}
+
+.row-bkg {
+    background-color: rgba(255,255,255,0.9);
+}
+
+.tbl-center {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: .25rem;
+    box-shadow: 0 4px 16px -3px rgba(133, 161, 255, 0.5)
+    ;
+}
+
+.g-dialog {
+    position: relative;
+      display: block;
+      z-index: 8888;
+    }
+
+    .bg-custom {
+        // background-color: rgba(52, 58, 64 ,0.2);
+        background-color: #103c6933;
+    }

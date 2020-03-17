@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+// body {
+//     background-color: rgba(51, 165, 220, 0.2);
+//   }
+
+.txt-20b {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #ffffff;
+  }
+
+  .txt-20b-gray {
+      color: #6c757d;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.15;
+  }
+
+  .txt-16 {
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .txt-30-gray {
+    color: #6c757d;
+    font-size: 30px;
+  }
+
+  .txt-40-gray {
+    color: #6c757d;
+    font-size: 40px;
+  }
+
+  .div.nav-link {
+      cursor: pointer;
+  }
+
+  .li.nav-item {
+    cursor: pointer;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.center-obj {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.container-rel {
+  position: relative;
+  }
+
+  .only-curs {
+    cursor: pointer;
+  }
+

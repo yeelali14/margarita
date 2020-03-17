@@ -1,0 +1,14 @@
+.dropdown-content {
+    position: fixed;
+    min-width: 100px;
+    word-break: normal;
+    border-radius: 7px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
+    background-color: #343a40;
+    z-index: 1;
+    color: rgba(255,255,255,.5);
+  }
+
+  .nav-link:hover {
+    color: rgba(255,255,255,.75);
+  }

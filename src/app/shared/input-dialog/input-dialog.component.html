@@ -1,0 +1,59 @@
+<div [hidden]="!isDialog">
+    <div [@fasterFade]  class="general-dialog">
+
+        <div class="container">
+          <div class="row">
+            <div class="p-5"></div>
+      
+            <div class="col-12 d-flex justify-content-center">
+              <div class="col-5">
+                <div class="rectangle-f p-3">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-end" (click)="closeDialog(formDirective)">
+                      <span><i class="fas fa-times"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <form [formGroup]="actionForm" #formDirective="ngForm">
+      
+                      <div *ngIf="isAddForm" class="form-group">
+                        <label class="">ID:</label>
+                        <input type="number" formControlName="id" class="form-control" [(ngModel)]="sensorModel.ID" />
+                        <div *ngIf="f.id.errors && (f.id.dirty || f.id.touched)" class="alert alert-danger">
+                          <div *ngIf="f.id.errors.required">ID is required</div>
+                          <div *ngIf="f.id.errors.pattern">ID must contain numbers</div>
+                          <div *ngIf="f.id.errors.max">ID must be smaller than 300</div>
+                          <div *ngIf="f.id.errors.min">ID must be equal or greater than 0</div>
+                        </div>
+                      </div>
+      
+                      <div *ngIf="isUpdateForm || isDeleteForm" class="form-group">
+                        <label class="">ID:</label>
+                        <select *ngIf="sensors" class="custom-select" formControlName="id" class="form-control"
+                          [(ngModel)]="sensorModel.ID" (change)="changeOption($event)">
+                          <option *ngFor="let sensor of sensors" [value]="sensor.ID">{{sensor.ID}}</option>
+                        </select>
+                      </div>
+      
+                      <div [hidden]="isDeleteForm" class="form-group">
+                        <label class="">Name:</label>
+                        <input type="text" formControlName="name" class="form-control" [(ngModel)]="sensorModel.Name" />
+                        <div *ngIf="f.name.errors && (f.name.dirty || f.name.touched)" class="alert alert-danger">
+                          <div *ngIf="f.name.errors.required">Name is required</div>
+                        </div>
+                      </div>
+                      <button [disabled]="!actionForm.valid" type="submit" class="btn btn-primary"
+                        (click)="onSubmit(formDirective)">Submit</button>
+                    </form>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+        </div>
+      
+      </div>
+</div>

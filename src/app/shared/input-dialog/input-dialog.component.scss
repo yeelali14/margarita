@@ -1,0 +1,21 @@
+.general-dialog {
+    display: block;
+    background-color: rgba(47, 57, 87, 0.5);
+    z-index: 8889;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  
+  .close-dialog-g {
+    float: right;
+    cursor: pointer;
+    padding-right: 5px;
+  }
+
+  .rectangle-f {
+    border-radius: 7px;
+    background-color: #ffffff;
+  }

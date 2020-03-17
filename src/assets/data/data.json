@@ -1,0 +1,46 @@
+[
+    {
+        "ID": 0,
+        "Name": "Sensor0"
+    },
+    {
+        "ID": 1,
+        "Name": "Sensor1"
+    },
+    {
+        "ID": 2,
+        "Name": "Sensor2"
+    },
+    {
+        "ID": 3,
+        "Name": "Sensor3"
+    },
+    {
+        "ID": 4,
+        "Name": "Sensor4"
+    },
+    {
+        "ID": 5,
+        "Name": "Sensor5"
+    },
+    {
+        "ID": 6,
+        "Name": "Sensor6"
+    },
+    {
+        "ID": 7,
+        "Name": "Sensor7"
+    },
+    {
+        "ID": 8,
+        "Name": "Sensor8"
+    },
+    {
+        "ID": 9,
+        "Name": "Sensor9"
+    },
+    {
+        "ID": 10,
+        "Name": "Sensor10"
+    }
+]

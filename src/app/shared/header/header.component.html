@@ -1,0 +1,21 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+      <div class="only-curs txt-20b" routerLink="/">
+          <span><i class="fas fa-cocktail"></i></span>
+          marGarITA
+      </div>
+        <ul class="nav justify-content-end txt-16">
+          <li class="nav-item dropdown p-2" (mouseleave)="showActionMenu=false">
+            <div class="nav-link dropbtn" (mouseover)="showActionMenu=true">Actions
+              <span><i class="fas fa-angle-down"></i></span>
+            </div>
+            <div *ngIf="showActionMenu" class="dropdown-content" (mouseover)="showActionMenu=true">
+              <div class="nav-link p-2" (click)="actionClick('add')">Add</div>
+              <div class="nav-link p-2" (click)="actionClick('update')">Update</div>
+              <div class="nav-link p-2" (click)="actionClick('delete')">Delete</div>
+            </div>
+          </li>
+        </ul>
+  </div>
+
+</nav>

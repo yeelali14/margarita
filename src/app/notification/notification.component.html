@@ -1,0 +1,18 @@
+<div class="container bg-rect">
+  <div class="">
+      <div class="row">
+          <div class="col-12 d-flex justify-content-end">
+              <div *ngIf="notifications" class="col-6 ">
+                  <div *ngFor="let notification of notifications" class="{{ cssClass(notification) }} p-3">
+                      {{notification.message}}
+                      <a class="close" (click)="removeNotification(notification)">&times;</a>
+                    </div>
+              </div>
+          </div>
+        </div>
+  </div>
+
+</div>
+
+
+

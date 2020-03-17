@@ -1,0 +1,34 @@
+<!-- <div class="{{ cssClass(isDialog)}}"> -->
+<app-header></app-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 p-3"></div>
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-6 table-responsive">
+        <table *ngIf="sensor" class="table table-striped table-dark table-hover">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">ID<span class="ml-3" (click)="sortById()"><i class="fas fa-sort-down"
+                    [ngClass]="{'fa-rotate-180': idUp}"></i></span></th>
+              <th scope="col">Name<span class="ml-3" (click)="sortByName()"><i class="fas fa-sort-down"
+                    [ngClass]="{'fa-rotate-180': nameUp}"></i></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let s of sensor">
+              <td><span class="txt-30-gray"><i class="fas fa-cocktail"></i></span></td>
+              <td>{{s.ID}}</td>
+              <td>{{s.Name}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-input-dialog (isInputDialog)="showInputDialog($event)"></app-input-dialog>
+<app-notification></app-notification>
+<router-outlet></router-outlet>
