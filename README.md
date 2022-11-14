@@ -1,5 +1,8 @@
 # SensorManagment
 What do you mean?
+No hidden catch,
+No strings attached
+Just free love.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
